@@ -1,0 +1,29 @@
+JButton button = new JButton();
+  try {
+    Image img = ImageIO.read(getClass().getResource("monimage.jpg"));
+    button.setIcon(new ImageIcon(img));
+  } catch (IOException ex) {
+  }
+
+boutonDos.setBounds(5, 250, 150, 200);
+		boutonDos.setActionCommand("butDos");
+		boutonDos.setIcon(imgDos);
+		this.panneau.add(boutonDos);
+
+
+		boutonDos2.setBounds(160, 250, 150, 200);
+		boutonDos2.setActionCommand("butDos2");
+		boutonDos2.setIcon(imgDos);
+		this.panneau.add(boutonDos2);
+		
+		
+		boutonDos3.setBounds(330, 250, 150, 200);
+		boutonDos3.setActionCommand("butDos3");
+		boutonDos3.setIcon(imgDos);
+		this.panneau.add(boutonDos3);
+		
+		boutonDos4.setBounds(500, 250, 150, 200);
+		boutonDos4.setActionCommand("butDos4");
+		boutonDos4.setIcon(imgDos);
+		this.panneau.add(boutonDos4);
+		
