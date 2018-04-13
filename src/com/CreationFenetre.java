@@ -1,5 +1,6 @@
 package com;
 
+import java.awt.Font;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -27,7 +28,18 @@ Cartes cartes;
 	public JButton boutonGagnant = new JButton();
 	public JButton boutonPerdant = new JButton();
 	public JButton boutonRestart = new JButton();
+	Font font = new Font("Arial",Font.BOLD,24);
 
+	public Font getFont() {
+		return font;
+	}
+
+
+
+
+	public void setFont(Font font) {
+		this.font = font;
+	}
 
 	public JLabel labelScore=new JLabel();
 	public JLabel labelPoint=new JLabel();
@@ -47,10 +59,13 @@ Cartes cartes;
 		labelScore = new JLabel();
 		labelScore.setBounds(5,20,150,20);
 		labelScore.setText("Score: ");
+		
+		labelScore.setFont(font);
 		panneau.add(labelScore);
 
 		labelPoint = new JLabel();
-		labelPoint.setBounds(50,20,150,20);
+		labelPoint.setBounds(100,20,150,20);
+		labelPoint.setFont(font);
 		
 		panneau.add(labelPoint);
 

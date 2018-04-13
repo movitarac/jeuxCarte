@@ -6,27 +6,19 @@ public class Cartes {
 	
 	int score=0;
 	
-	
-	/*public int calculerScore () {
-		Random random=new Random();
-		int chance = random.nextInt(4);
-		score = 0;
-		
-		if (chance==0) {
-			score+=5;
-			System.out.println("GAGNE");
-		}
-		else {
-			score -= 1;
-			System.out.println("PERDU");
-		}
-		
+	/*
+	public int gagner () {
+		score+=getScore()+5;
 		return score;
 	
-	}	*/
+	}	
 	
+	public int perdre () {
+		score+=getScore()-1;
+		return score;
 	
-
+	}	
+*/
 
 	public int getScore() {
 		return score;

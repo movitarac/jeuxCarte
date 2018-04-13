@@ -8,9 +8,7 @@ public class Main {
 		Cartes cartes = new Cartes();
 
 		GestionnaireFenetre gestionJeux = new GestionnaireFenetre(cartes);
-		
-		//Cartes test = new Cartes();
-		//System.out.println(test.calculerScore());
+	
 		
 	}
 
