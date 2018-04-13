@@ -1,5 +1,6 @@
 package com;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
@@ -59,15 +60,16 @@ Cartes cartes;
 		labelScore = new JLabel();
 		labelScore.setBounds(5,20,150,20);
 		labelScore.setText("Score: ");
-		
 		labelScore.setFont(font);
+		labelScore.setForeground(Color.WHITE);
 		panneau.add(labelScore);
 
 		labelPoint = new JLabel();
 		labelPoint.setBounds(100,20,150,20);
 		labelPoint.setFont(font);
-		
+		labelPoint.setForeground(Color.WHITE);
 		panneau.add(labelPoint);
+		panneau.setBackground(Color.BLACK);
 
 		//button insert image
 		ImageIcon imgDos= new ImageIcon ("dos.jpg");

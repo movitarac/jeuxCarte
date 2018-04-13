@@ -1,5 +1,6 @@
 package com;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -29,13 +30,14 @@ import javax.swing.JPanel;
 			this.cartes = cartes;
 			this.chance=chance;
 			
-			this.setTitle("Jeux de Carte");
+			this.setTitle("Card game");
 			this.setSize(725, 725);
 			this.setLocationRelativeTo(null);
 			this.setVisible(true);
 			this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			panneau = new JPanel();
 			panneau.setLayout(null);
+			panneau.setBackground(Color.BLACK);
 			this.setContentPane(panneau);
 			
 
@@ -45,12 +47,14 @@ import javax.swing.JPanel;
 			labelScore.setBounds(5,20,150,20);
 			labelScore.setText("Score: ");
 			labelScore.setFont(font);
+			labelScore.setForeground(Color.WHITE);
 			panneau.add(labelScore);
 
 			labelPoint = new JLabel();
 			labelPoint.setBounds(100,20,150,20);
 			labelPoint.setFont(font);
 			labelPoint.setText(" "+ cartes.getScore());
+			labelPoint.setForeground(Color.WHITE);
 			panneau.add(labelPoint);
 			//label insert image
 			ImageIcon imgjoker= new ImageIcon ("joker_1.jpg");
@@ -105,8 +109,10 @@ import javax.swing.JPanel;
 			
 			
 			boutonRestart.setText("Restart");
-			boutonRestart.setBounds(375, 500, 150, 20);
+			boutonRestart.setBounds(288, 500, 100, 50);
 			boutonRestart.setActionCommand("restart");
+			boutonRestart.setBackground(Color.WHITE);
+			boutonRestart.setForeground(Color.RED);
 			this.panneau.add(boutonRestart);
 			
 			
